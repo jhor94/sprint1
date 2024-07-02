@@ -16,10 +16,13 @@ body {
     max-width: 1200px;
     flex-wrap: wrap;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    margin: auto;
+
 }
 
 .menu1{
+    width: 100%;
     background: black;
     flex-wrap: wrap;
     padding: 10px;
@@ -31,7 +34,7 @@ header {
     background: rgb(67, 39, 93);
     padding: 10px;
     margin:10px;
-    flex-direction: row;
+    flex-direction: row; /* un elemento se pone al lado del otro*/
     justify-content: space-between;
     align-items: center;
     display: flex;
@@ -40,7 +43,7 @@ header {
 header .menu {
     width: 50%;
     padding: 10px;
-    margin: 5px;
+    margin: 10px;
     font-size: 15px;
     font-weight: bolder;
     background: red;
@@ -51,7 +54,7 @@ header .menu {
 header .logo {
     width: 20%;
     padding: 10px;
-    margin: 5px;
+    margin: 10px;
     font-size: 15px;
     font-weight: bolder;
     background: red;
@@ -63,7 +66,7 @@ header .logo {
 header .social {
     width: 30%;
     padding: 10px;
-    margin: 5px;
+    margin: 10px;
     font-size: 15px;
     font-weight: bolder;
     background: red;
@@ -90,6 +93,7 @@ header .social {
 /*MAIN-----------------------*/
 
 .main {
+    width: 100%;
     padding: 10px;
     margin: 10px;
     display: flex;
@@ -147,16 +151,17 @@ aside .ad{
     color: rgb(0, 0, 0);
     font-weight: bolder;
     display: flex;
-    align-items: flex-start;
     
 }
 
 /*FOOTER-----------------------*/
 footer{
+    width: 100%;
     background: rgb(0, 0, 0);
     margin: 10px;
     padding: 10px;
     flex-wrap: wrap;
+    flex-direction: row;
 }
 
 footer .pie {
@@ -169,22 +174,58 @@ footer .pie {
 
 /*RESPONSIVE*/
 
-@media only screen and (max-width:800px) {
-
+@media only screen and (max-width:900px) {
     .menu1 {
         width: 100%;
     }
     .main {
         width: 100%;
-    }  
+        flex-wrap: wrap;
+    } 
+    section{
+        width: 100%;
+    }
     aside {
         width: 100%;
-        flex-wrap: wrap;
     } 
     footer {
         width: 100%;
     } 
 }
+
+@media only screen and (max-width:600px) {
+   
+    header {
+        flex-direction: column;
+    }
+
+    header .logo{
+        width: 100%;
+    }
+    header .menu{
+        width: 100%;
+    }
+    header .social{
+        width: 100%;
+    }
+    .main {
+        width: 100%;
+        flex-wrap: wrap;
+    } 
+    section{
+        width: 100%;
+    }
+    .article-container {
+        flex-direction: column;
+        padding-bottom: 10px;
+    }
+
+    .article-par{
+        width: 100%;
+    }
+}
+
+/*ANIMACION*/
 
 
 
