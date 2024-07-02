@@ -81,7 +81,6 @@ header .social {
     margin: 15px;
     background: rgb(254, 158, 24);
     flex-wrap: wrap;
-    justify-content: space-around;
 }
 
 .banner p {
@@ -239,7 +238,17 @@ footer .pie {
 
 /*ANIMACION*/
 
+header div:hover{
+    text-decoration: underline;
+    background: rgb(244, 23, 244);
+    height: 50px;
+}
 
+header nav:hover{
+    text-decoration: underline;
+    background: rgb(244, 23, 244);
+    height: 50px;
+}
 
 
 
