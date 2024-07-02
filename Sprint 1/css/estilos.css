@@ -175,6 +175,12 @@ footer .pie {
 /*RESPONSIVE*/
 
 @media only screen and (max-width:900px) {
+    body{
+        background: black;
+    }
+    .contenedor{
+        background: whitesmoke;
+    }
     .menu1 {
         width: 100%;
     }
@@ -194,6 +200,12 @@ footer .pie {
 }
 
 @media only screen and (max-width:600px) {
+    body{
+        background: red;
+    }
+    .contenedor{
+        background: goldenrod;
+    }
    
     header {
         flex-direction: column;
