@@ -1,0 +1,114 @@
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/mixins";
+
+$primary: #5265E1;
+$secondary: #FA5959;
+
+
+$theme-colors: (
+    "primary":$primary,
+    "secondary":$secondary,
+);
+
+$custom-colors: (
+  "custom-color": #5265E1
+);
+
+$accordion-icon-active-color: $secondary;
+
+html,
+body {
+  overflow-x: hidden ;
+}
+
+.btn-secondary {
+  background-color: $secondary;
+  border-color:$body-bg
+}
+
+.btn-submit {
+  background-color: $secondary;
+  border-color: none;
+}
+
+.btn-submit:hover {
+  color:$secondary;
+  background-color: $body-bg;
+  border-color: $secondary;
+}
+
+.btn-primary:hover {
+  color: $primary;
+  background-color: $body-bg;
+  border-color: $primary;
+}
+
+.btn-firefox:hover{
+  color: dark;
+  background-color: $body-bg;
+  border-color: $dark;
+}
+
+.img-main {
+  position: relative;
+  z-index: 1;
+}
+
+.blue-right-shadow {
+  position: absolute;
+  z-index: -1;
+  width: 85%;
+  height: 70%;
+  top:35%;
+  background-color: $primary;
+  left: 30%;
+  border-bottom-left-radius: 8rem;
+}
+
+.blue-left-shadow {
+  position: absolute;
+  z-index: -1;
+  width: 110%;
+  height: 80%;
+  top:35%;
+  background-color: $primary;
+  border-bottom-left-radius: 8rem;
+}
+
+//cards
+
+
+
+//acordion
+
+.acordion-button:hover{
+  color: $secondary;
+}
+
+.accordion-button-focus {
+  border-color: transparent !important;
+  box-shadow: none !important;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: transparent !important;
+  box-shadow: none !important;
+}
+
+$accordion-button-icon: url(/img/icon-arrow.svg);
+$accordion-icon-active-color: $secondary;
+
+
+
+
+// Merge the maps
+
+
+
+
+//@import "./node_modules/bootstrap/scss/bootstrap.scss";
+//@import "./node_modules/bootstrap/scss/functions";
+//@import "./node_modules/bootstrap/scss/variables";
+//@import "./node_modules/bootstrap/scss/mixins";
